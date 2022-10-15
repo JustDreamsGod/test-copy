@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+@import './header';
+@import './clinic';
+@import './about';
+@import './price';
+@import './clinic-video';
+@import './team';
+@import './care';
+@import './join';
+@import './photos';
+@import './openworld';
+@import './contacts';
+@import './footer';
+@import './media';
+
+
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+[class*="__container"] {
+    width: auto;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #fff;  
+    font-family: 'Montserrat', sans-serif;
+}
+.reception {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    border: 1px solid #4B99F1;
+    border-radius: 50%;
+        &__btn {
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            font-weight: 500;
+            border-radius: 50%;
+            background-color: #000;
+            transform: rotate(-35deg);
+            top: 0;
+            left: -17px;      
+            transition-duration: 0.3s;     
+                &:hover {
+                    background-color: #4B99F1;
+                    transform: rotate(-2deg);
+                    left: 0;
+                }
+            }
+}
+ul {
+    list-style: none;
+}
+.wrapper {
+    overflow: hidden;
+}
+img {
+    width: 100%;
+}

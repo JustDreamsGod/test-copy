@@ -1,0 +1,48 @@
+.openworld {
+    h2 {
+        padding-bottom: 10px;
+        padding-top: 202px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 52px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        padding-bottom: 70px;
+    }
+    &__cards {
+        text-align: center;
+    }
+    &__card {
+        display: inline-grid;
+        width: 260px;
+        margin-right: 25px;
+        margin-bottom: 30px;
+        margin-left: 25px;
+    }
+}
+.openworld__card {
+    .card__img {
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+    }
+}
+.planet {
+    background-image: url('../img/planet.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    height: 678px;
+}

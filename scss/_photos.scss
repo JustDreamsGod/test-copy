@@ -1,0 +1,70 @@
+.photos{
+    margin-top: 160px;
+    h2 {
+        text-align: left;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 52px;
+        color: #000;        
+        padding-bottom: 100px;
+    }
+}
+.slider {
+    position: relative;
+    padding: 0 165px;
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        font-size: 0;  
+        width: 50px;
+        height: 50px;
+        border: 1px solid #4B99F1; 
+        border-radius: 50%;
+    }
+}
+.slick-arrow.slick-disabled {
+    opacity: .3;
+}
+.slick-prev {
+    left: 90px;  
+    background: url('../img/slider-arrow.svg') 0 0 / 100% no-repeat;
+    transform: rotate(-180deg);              
+}
+.slick-next {
+    right: 90px;
+    background: url('../img/slider-arrow.svg') 0 0 / 100%  no-repeat;
+}
+
+
+// SLICK
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+        margin: 0 10px;
+    }
+    button {
+        background-color: gray;
+        opacity: .2;
+        border-radius: 50%;
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+    }
+}
+.slick-active {
+    button {
+        background-color: #4B99F1;
+        opacity: 1;
+    }
+}

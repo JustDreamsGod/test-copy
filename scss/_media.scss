@@ -1,0 +1,275 @@
+@media (min-width: 1400px) {
+    [class*="__container"] {
+        max-width: 1330px;
+    }
+}
+
+@media (max-width: 1398.99px) {
+    [class*="__container"] {
+        max-width: 975px;        
+    }
+}
+@media (max-width: 992px) {
+    [class*="__container"] {
+        max-width: 720px;        
+    }
+}
+@media (max-width: 768px) {
+    [class*="__container"] {
+        max-width: 590px;        
+    }
+}
+@media (max-width: 610px) {
+    [class*="__container"] {
+        max-width: 520px;        
+    }
+}
+@media (max-width: 519.99px) {
+    [class*="__container"] {
+        padding-left: 20px;
+        padding-right: 20px;        
+    }
+}
+
+
+
+
+
+/*======= HEADER =========*/
+
+@media (max-width: 1599px) {
+    .header__btn {
+        padding-left: 18px;
+        padding-right: 19px;
+    }
+    .header__nav {
+        font-size: 14px;
+        gap: 19px;
+    }
+}
+
+
+@media (max-width: 1306px) {
+    .sign {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .header__nav {
+            gap: 12px;
+        }
+}
+@media (max-width: 1205px) {
+    .header__nav {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1199px) {
+    .header__nav {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    .header__logo {
+        color: #fff;
+    }
+}
+
+
+/*====== CLINIC ======*/
+
+@media (max-width: 1205px) {
+    .clinic__video {
+        h2 {
+            font-size: 90px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+
+    .clinic__container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .video {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .clinic__title-mob {
+        display: block;
+        padding-left: 50px;
+            h1 {
+                margin-bottom: 44px;
+            }
+            h2 {       
+                font-size: 70px;
+                line-height: 72px; 
+                bottom: 0;
+            }
+            p {
+            padding: 40px 0;
+            }
+            img {
+                margin-bottom: 10px;
+            }
+    }
+
+    .reception--mob {
+        margin: 0 !important;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .clinic__title-mob {
+        padding-left: 10px;
+        img {
+            width: 280px;
+            max-width: 100%;
+        }
+        h2 {
+            font-size: 53px;
+            line-height: 62px;
+        }
+    }
+    .reception--mob {
+        margin: 0 auto;
+    }
+}
+
+/*===== ABOUT ===== */
+
+@media (max-width: 991.99px) {
+    .about__container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about__text {
+        margin-bottom: 50px;
+        width: 100%;
+        text-align: left;
+    }
+}
+@media (max-width: 610px) {
+    .about__list li {
+        padding-left: 85px;
+        list-style: none;
+        padding-top: 45px;
+    }
+    .about__text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .list__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .list__text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .list__img {
+        width: 50px;
+    }
+}
+
+
+/*===== PRICE =====*/
+
+@media (max-width: 991.99px) { 
+    .price__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .price__title {
+        padding-bottom: 75px;
+    }
+}
+@media (max-width: 610px) { 
+
+    .price__cards {
+        grid-template-columns: 1fr;
+    }
+    .price__title {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 34px;
+        padding-bottom: 65px;
+        text-align: center;
+    }
+    .card {
+        padding: 35px 40px;
+    }
+}
+
+/*===== TEAM =====*/
+
+@media (max-width: 1398.99px) { 
+    .team__cards {
+        grid-template-columns: repeat(3, 260px);
+    }
+}
+@media (max-width: 991.99px) { 
+    .team__title {
+        padding-bottom: 65px;
+        padding-left: 40px;
+    }
+    .team__cards {
+        grid-template-columns:260px 260px;
+        justify-content: center;
+        gap: 40px;
+    }
+    .team__card {
+        margin-bottom: 34px;
+    }
+
+}
+@media (max-width: 768.99px) { 
+    .team__cards {
+        grid-template-columns:260px;
+    }      
+    .team__card--hidden {
+        display: none;
+    }
+    .team__show-btn {
+        display: block;
+    }
+}
+@media (max-width: 610px) {
+        .team__cards {
+            gap: 10px;
+        }
+        .team__title {
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 34px;
+            padding-bottom: 70px;
+            text-align: center;
+            padding-left: 0;
+        }
+        .team__card h5 {
+            text-align: center;
+            color: #4B99F1;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+        }
+        .team__card p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+            text-align: center;
+        }
+}

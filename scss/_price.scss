@@ -1,0 +1,101 @@
+.price {
+    margin-bottom: 170px;
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 52px;
+        color: #000;
+        padding-bottom: 100px;
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+.card {
+    margin-bottom: 40px;
+    background: #F2F9FF;
+    border-radius: 20px;
+    min-height: 370px;
+    padding: 40px 50px;
+    transition-duration: 0.3s;
+        &__title {
+            padding-top: 30px;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 28px;
+            color: #000;
+            padding-bottom: 20px;
+            transition-duration: 0.3s;
+        }
+        &__list li {
+            position: relative;
+            padding: 5px 0 5px 23px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: #63717D;
+            transition-duration: 0.3s;
+        }
+        &__list li::before{
+            position: absolute;
+            content: '';
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: #63717D;
+            left: 0;
+            top: 50%;
+            transition-duration: 0.3s;
+        }
+        .more {
+            color: #4B99F1;
+            padding-top: 51px;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 16px;
+            transition-duration: 0.3s;
+        }
+}
+.card__logo {
+    height: 70px;
+    width: 70px;
+    border: 1px solid #4B99F1;
+    border-radius: 50%;
+    position: relative;  
+    transition-duration: 0.3s;  
+    &-img {
+        position: absolute;
+        top: 0;
+        left: -12px;
+        text-align: center;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color: #4B99F1;
+        color: #fff;
+        transform: rotate(-25deg); 
+        transition-duration: 0.3s;       
+            svg {
+                padding-top: 19px;
+            }
+    }
+}
+.card:hover {
+    background-color: #4B99F1;
+}
+.card:hover .card__title,
+.card:hover .card__list li,
+.card:hover .more {
+    color: #fff;
+}
+.card:hover .card__list li::before {
+    background-color: #fff;
+}
+.card:hover .card__logo-img {
+    background-color: #fff;
+    color: #4B99F1;
+    left: 0;
+    transform: rotate(0deg);
+}

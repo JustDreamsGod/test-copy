@@ -1,0 +1,38 @@
+.join {
+    margin-top: 161px;
+    h3 {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 52px;
+        padding-bottom: 50px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        padding-bottom: 80px;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &__text {
+        max-width: 600px;
+    }
+    &__btn {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 25px;
+        background-color: #4B99F1;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        border: 1px solid #4B99F1;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}

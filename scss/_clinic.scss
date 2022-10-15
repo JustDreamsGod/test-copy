@@ -1,0 +1,94 @@
+
+.clinic {
+    height: 100vh;
+    margin-bottom: 150px;
+    display: flex;
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 40px;
+        min-height: 700px;
+    }
+}
+.clinic__title {
+    margin-left: auto;
+    
+    h1 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 33px;
+    }
+    img {
+        margin-bottom: 40px;
+        user-select: none;
+    }
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        padding-bottom: 75px;
+    }
+    .reception {
+        margin: 0 auto;
+    }
+}
+.clinic__video {
+    position: relative;
+     h2 {
+        position: relative;
+        bottom: -91px;
+        z-index: 5;
+        font-weight: 500;
+        font-size: 100px;
+        line-height: 100px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    
+}
+
+.video {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    min-height: 700px;
+    video {
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    } 
+    &-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+}
+.clinic__title-mob {
+    display: none;
+    .clinic__title {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+    } 
+
+    img {
+        width: 415px;
+    }
+}
+.reception--mob {
+    .reception__btn {
+        background-color: #fff;
+        color: #000;
+            &:hover {
+                background-color: #000;
+                color: #fff; 
+            }
+    }
+}
